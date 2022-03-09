@@ -1,7 +1,7 @@
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
-const resultDisplay = docuemnt.getElementById('result');
-const possibleChoices = docuemnt.querySelectorAll('button');
+const resultDisplay = document.getElementById('result');
+const possibleChoices = document.querySelectorAll('button');
 let userChoice;
 let computerChoice;
 let result;
@@ -51,4 +51,6 @@ function getResult() {
     if (computerChoice === 'scissors' && userChoice === 'paper') {
         result = `You Lost!`
     }
+
+    resultDisplay.innerHTML = result;
 }
